@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "70d9089922e9429196f657d925577c07"
+name = "Availability Calendar"
+handle = "availability-calendar"
+application_url = "https://cambridge-invitation-winds-entertainment.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-ad643d18.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://cambridge-invitation-winds-entertainment.trycloudflare.com/auth/callback",
+  "https://cambridge-invitation-winds-entertainment.trycloudflare.com/auth/shopify/callback",
+  "https://cambridge-invitation-winds-entertainment.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
